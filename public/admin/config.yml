@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main  # 你的主分支
+
+media_folder: public/images  # 图片上传目录（会自动创建）
+public_folder: /images
+
+collections:
+  - name: "articles"
+    label: "文章"
+    folder: "articles"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "日期", name: "date", widget: "datetime"}
+      - {label: "正文", name: "body", widget: "markdown"}
