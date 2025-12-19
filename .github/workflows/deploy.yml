@@ -1,3 +1,5 @@
+#自动部署你的博客。当你 push 代码到 main 分支时，
+#它会自动运行 pnpm install、构建博客、发布到 GitHub Pages。超级重要，没有它博客不会自动上线
 name: Deploy to GitHub Pages
 
 on:
@@ -36,3 +38,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
