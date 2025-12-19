@@ -1,3 +1,4 @@
+#定义博客的全局设置，比如标题、导航栏、侧边栏、主题颜色、暗黑模式、footer 等。你的博客外观和结构主要靠这里控制。
 import { defineConfig } from 'vitepress'
 import decapCms from 'vite-plugin-decap-cms'
 export default defineConfig({
